@@ -1,0 +1,221 @@
+:root {
+    --azul: #3266ba;
+    --gris: #a1a1a1;
+    --grisClaro: #d5d5d5;
+}
+
+* {
+    font-family: "Reddit Mono", monospace; 
+}
+
+header {
+    top: 0;
+    left: 0%;
+    position: fixed;
+    background-color: var(--azul);
+    padding: 0%;
+    margin: 0%;
+    height: 10%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    width: 100vw;
+    height: 100vh;
+}
+
+.btnMain {
+    background-color: var(--azul);
+    min-width: 20%;
+    max-width: 30%;
+    height: 45%;
+    border-radius: 30px;
+    border: none;
+    margin: 20px;
+    padding: 30px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+
+    transition: 0.5s;
+}
+
+.btnMain:hover {
+    transform: scale(105%);
+    background-color: #252ba0;
+    box-shadow: 0px 0px 15px var(--azul);
+
+    transition: 0.5s;
+}
+
+.container {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#formAdd {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px var(--gris);
+}
+#btnClose {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    width: 55px;
+    height: 55px;
+    background: none;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 10px;
+    
+    transition: 0.5s;
+}
+#btnClose:hover {
+    background-color: var(--gris);
+
+    transition: 0.5s;
+}
+#formAdd input {
+    height: 30px;
+    width: 70%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: solid 1px var(--gris);
+}
+#formAdd textarea {
+    resize: none;
+    height: 120px;
+    width: 70%;
+    padding: 8px;
+    border-radius: 20px;
+    border: solid 1px var(--gris);
+}
+#addBtn {
+    height: 45px;
+    width: 120px;
+    background-color: var(--azul);
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    
+    transition: 0.5s;
+}
+#addBtn:hover {
+    transform: scale(105%);
+    background-color: #252ba0;
+    box-shadow: 0px 0px 15px var(--azul);
+
+    transition: 0.5s;
+}
+
+#lineInput {
+    position: absolute;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -10%;
+    height: 30px;
+    width: 90%;
+
+}
+#inputBuscar {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    padding: 0px 10px;
+    height: 30px;
+    width: 90%;
+}
+#lineInput button {
+    border: none;
+    height: 30px;
+    width: 65px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    border-left: solid 2px var(--gris);
+}
+
+
+#listaProds {
+    height: 80%;
+    width: 80%;
+    overflow-y: scroll;
+    margin: 0%;
+    padding: 0%;
+    padding-right: 10px;
+}
+#listaProds li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#listaProds li h1 {
+    width: 160px;
+    font-size: 25px;
+    text-align: center;
+}
+#descripcionText {
+    width: 200px;
+}
+#listaProds::-webkit-scrollbar {
+    width: 8px;
+    background-color: var(--grisClaro);
+    border-radius: 4px;
+}
+#listaProds::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-color: var(--gris);
+    border-radius: 4px;
+}
+
+.cabeceraLista {
+    background-color: var(--azul);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cabeceraLista p {
+    color: white;
+    font-size: 800;
+    text-align: center;
+}
+#nombre {
+    width: 160px;
+}
+
+span {
+    color: var(--azul);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}

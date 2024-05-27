@@ -3,15 +3,16 @@ import Producto from "../models/BST/Producto.js";
 
 let bst = new BST();
 
-let producto1 = new Producto("Lapiz", 8, 37, "Lapiz de grafito 4B");
-let producto2 = new Producto("Corrector", 20, 24, "Corrector de brocha para lapicero");
-let producto3 = new Producto("Borrador", 5, 11, "Goma de borrar pequeña");
-let Producto4 = new Producto("Hojas", 1, 200, "Hojas blancas de tamaño carta")
-let producto5 = new Producto("Cinta", 20, 12, "Cinta adhesiva para pegar diversos materiales");
-let producto6 = new Producto("Sacapuntas", 10, 16, "Sacapuntas de metal");
-let producto7 = new Producto("Grapadora", 60, 3, "Grapadora");
-let producto8 = new Producto("Crayones", 30, 3, "Caja de crayones con 12 colores");
-let producto9 = new Producto("Lapicero", 12, 10, "Lapicero de tinta");
+let producto1 = new Producto("Led", 20, 5, "Emiten luz cuando se aplica una corriente eléctrica.");
+let producto2 = new Producto("Diodo infrarrojo", 23, 10, "Mandan señales a través de Infrarrojo.");
+let producto3 = new Producto("Diodo puente", 15, 15, "Convierte corriente alterna (CA) en corriente continua (CC).");
+let Producto4 = new Producto("Relevador", 20, 15, "Regula circuitos de alta potencia.")
+let producto5 = new Producto("Puente H", 31, 53, "Controla el sentido de giro de un motor (CC).");
+let producto6 = new Producto("Terminales", 10, 3, "Permite la unión de cables.");
+let producto7 = new Producto("Resistencia", 62, 1, "Limita el flujo de corriente eléctrica en un circuito.");
+let producto8 = new Producto("Capacitores", 30, 10, "Almacena y liberan energía eléctrica.");
+let producto9 = new Producto("Circuitos integrados", 12, 25, "Se encargan de realizar diversas funciones.");
+let producto10 = new Producto ("Fusibles", 12, 7, "Interrumpen el flujo de corriente cuando ésta excede la variable.");
 
 bst.add(producto1);
 bst.add(producto2);
@@ -22,6 +23,7 @@ bst.add(producto6);
 bst.add(producto7);
 bst.add(producto8);
 bst.add(producto9);
+bst.add(producto10);
 
 export {
     bst

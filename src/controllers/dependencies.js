@@ -4,7 +4,7 @@ import Producto from "../models/BST/Producto.js";
 let bst = new BST();
 
 let producto1 = new Producto("Led", 20, 5, "Emiten luz cuando se aplica una corriente eléctrica.");
-let producto2 = new Producto("Diodo infrarrojo", 23, 10, "Mandan señales a través de Infrarrojo.");
+let producto2 = new Producto("Diodo infrarrojo", 21, 12, "Mandan señakes a traves de infrarrojo");
 let producto3 = new Producto("Diodo puente", 15, 15, "Convierte corriente alterna (CA) en corriente continua (CC).");
 let producto4 = new Producto("Relevador", 20, 15, "Regula circuitos de alta potencia.")
 let producto5 = new Producto("Puente H", 31, 53, "Controla el sentido de giro de un motor (CC).");
